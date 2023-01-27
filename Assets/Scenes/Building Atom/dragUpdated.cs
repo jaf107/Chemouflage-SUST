@@ -398,3 +398,164 @@ public class dragUpdated : MonoBehaviour
         return -1;
     }
 
+    private void switchPositions(int index, string type)
+    {
+        if (type == "proton")
+        {
+            for (int i = 0; i < numPNE; i++)
+            {
+                if (PcheckInNucleus[i] && i != index)
+                {
+                    Debug.Log("jayga bodlaooo " + index);
+                    iTween.MoveTo(pNew[i], protonPositions[index], 1.2f);
+                    sRoundList.Add(protonPositions[i]);
+                    protonPositions[i] = protonPositions[index];
+                    PcheckInNucleus[i] = true;
+                    PcheckInNucleus[index] = false;
+                    return;
+                }
+            }
+            PcheckInNucleus[index] = false;
+        }
+        else if (type == "neutron")
+        {
+
+            for (int i = 0; i < numPNE; i++)
+            {
+                if (NcheckInNucleus[i] && i != index)
+                {
+                    Debug.Log("jayga bodlaooo " + index);
+                    iTween.MoveTo(nNew[i], neutronPositions[index], 1.2f);
+                    sRoundList.Add(neutronPositions[i]);
+                    neutronPositions[i] = neutronPositions[index];
+                    NcheckInNucleus[index] = false;
+                    NcheckInNucleus[i] = true;
+                    return;
+                }
+            }
+            NcheckInNucleus[index] = false;
+        }
+    }
+
+    private void updateInfo() // back e chole gele ekta error dey
+    {
+        if (currentP > 0)
+        {
+            Symbol.text = symbolName[currentP - 1];
+        }
+        else
+        {
+            Symbol.text = "-";
+        }
+
+        if (currentElementNum > 0)
+        {
+            if (currentP>0 && (currentP + currentN) == massofElements[currentP - 1] && currentN == neutronOfElements[currentP - 1])
+            {
+                GameObject.Find("p&n").GetComponent<Shake>().enabled = false;
+                stable.text = "Stable\nNucleus";
+                stable.color = new Color(0.06f, 0.34f, 0.06f);
+                stableLine.text = "Stable nucleus have roughly equal numbers of proton and neutrons";
+            }
+            else
+            {
+                GameObject.Find("p&n").GetComponent<Shake>().enabled = true;
+                stable.text = "Unstable\nNucleus";
+                stable.color = Color.red;
+                stableLine.text = "Add or remove proton neutrons to make the nucleus stable";
+            }
+        }
+        else 
+        {
+            stable.text = " ";
+            extraLine.text = " ";
+            stableLine.text = " ";
+        }
+        mass.text = (currentP + currentN).ToString();
+        pNumber.text = (currentP).ToString();
+        nNumber.text = (currentN).ToString();
+        eNumber.text = (currentE).ToString();
+
+        charge.text = (currentP - currentE).ToString();
+        if ((currentP - currentE) > 0)
+        {
+            ion.text = "+ION";
+            charge.text = "+" + charge.text;
+        }
+        else if(((currentP - currentE) == 0) && currentP>0 )
+        {
+            ion.text = "Neutral";
+        }
+        else if(currentP>0)
+        {
+            ion.text = "-ION";
+        }
+        else
+        {
+            ion.text = " ";
+        }
+
+    }
+
+    void addExtraLine(string update)
+    {
+        switch (update)
+        {
+            case "new np":
+                if(currentP==0)
+                {
+                    extraLine.text = "Add a proton";
+                }
+                else if(currentN!= neutronOfElements[currentP - 1])
+                {
+                    extraLine.text = "It is an Isotope of " + symbolName[currentP - 1];
+                }
+                else
+                {
+                    extraLine.text = "You made a " + symbolName[currentP - 1];
+                }
+                break;
+            case "new proton":
+                if ((currentP + currentN) == massofElements[currentP - 1] && currentN == neutronOfElements[currentP - 1])
+                {
+                   extraLine.text =  "You made a " + symbolName[currentP - 1]; 
+                }
+                break;
+            case "remove electron":
+                if (currentE < currentP)
+                {
+                    extraLine.text = "The energy you used here is called Ionization Energy";
+                }
+                else if (currentE == currentP)
+                {
+                    if (currentP > 0)
+                        extraLine.text = "You made a " + symbolName[currentP - 1];
+                    else
+                        extraLine.text = "No electron left";
+                }
+                else
+                {
+                    extraLine.text = "Keep same number of electrons as protons";
+                }
+                break;
+            case "add electron":
+                if (currentE > currentP)
+                {
+                    extraLine.text = "The energy you used here is called Electron Affinity";
+                }
+                else if (currentE == currentP)
+                {
+                    extraLine.text = "You made a " + symbolName[currentP - 1];
+                }
+                else
+                {
+                    extraLine.text = "Add same number of electrons as protons";
+                }
+                break;
+            case "stay electron":
+                extraLine.text = "You can only remove electron from outer orbit";
+                break;
+
+        }
+    }
+}
