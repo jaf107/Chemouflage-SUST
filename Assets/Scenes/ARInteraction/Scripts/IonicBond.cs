@@ -19,7 +19,6 @@ public class IonicBond : MonoBehaviour
     public GameObject firstTarget;
     public GameObject secondTarget;
     public GameObject cam;
-
     public GameObject firstObject;
     public string firstObjectName;
     public float distance;
@@ -39,7 +38,7 @@ public class IonicBond : MonoBehaviour
         objectToFind2 = GameObject.FindGameObjectWithTag("NEW");
         cam = GameObject.FindGameObjectWithTag("Finish");
 
-        saltModel = GameObject.FindGameObjectWithTag("salt");
+       // saltModel = GameObject.FindGameObjectWithTag("salt");
 
         if (objectToFind != null)
         {
