@@ -1,0 +1,533 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073b5878cbef2364cb928faafba64ca5, type: 3}
+  m_Name: AltTesterEditorSettings
+  m_EditorClassIdentifier: 
+  appendToName: 0
+  AdbPath: /usr/local/bin/adb
+  IProxyPath: /usr/local/bin/iproxy
+  XcrunPath: /usr/bin/xcrun
+  MyTests:
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    _testAssembly: Unity.VisualStudio.Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTester.dll
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: TestExample
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTester.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 1
+  - _selected: 0
+    _testName: TestExample.Test
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: TestExample
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/AltTester/Editor/DefaultTestExample.txt
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    _testAssembly: UnityEngine.TestRunner
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    _testAssembly: UnityEditor.TestRunner
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _testAssembly: Unity.Rider.Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 4
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanSendAndReceiveEvents
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testAssembly: AltTesterEditor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 8
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 8
+  - _selected: 1
+    _testName: BondingTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 1
+  - _selected: 1
+    _testName: BondingTest.ChemicalBondingTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: BondingTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.4586912
+    path: Assets/AltTester/Editor/Tests/BondingTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: ExploratoryTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 2
+  - _selected: 1
+    _testName: ExploratoryTest.GuestButton
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: ExploratoryTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.5567071
+    path: Assets/AltTester/Editor/Tests/ExploratoryTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: ExploratoryTest.LoadMenu
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: ExploratoryTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.193567
+    path: Assets/AltTester/Editor/Tests/ExploratoryTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: SecondPageTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 4
+  - _selected: 1
+    _testName: SecondPageTest.AR_Button
+    _testAssembly: AltTesterEditor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: SecondPageTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/AltTester/Editor/Tests/SecondPageTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: SecondPageTest.BuildButton
+    _testAssembly: AltTesterEditor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: SecondPageTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/AltTester/Editor/Tests/SecondPageTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: SecondPageTest.ChemicalBondButton
+    _testAssembly: AltTesterEditor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: SecondPageTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/AltTester/Editor/Tests/SecondPageTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: SecondPageTest.SecondPageTesting
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: SecondPageTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.1667164
+    path: Assets/AltTester/Editor/Tests/SecondPageTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: SimulationTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 1
+  - _selected: 1
+    _testName: SimulationTest.SimulateTest
+    _testAssembly: AltTesterEditor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: SimulationTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.1760955
+    path: Assets/AltTester/Editor/Tests/SimulationTest.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/SUST Hackathon/SUST_Chemouflage/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+    _testAssembly: Unity.InputSystem.TestFramework
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  Scenes:
+  - _toBeBuilt: 1
+    _path: Assets/JMO Assets/Cartoon FX/Demo/CFX Free Demo.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/2nd Page/2nd Page.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/2nd Page/Profile.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/ARInteraction/AR Interaction.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Authentication/FirebaseLogin.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Compound List/Predefined List.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Menu/Menu.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Simulation/Simulate.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Sharp Text Mesh/Scene/Demo.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Standard Assets/Effects/TessellationShaders/Scenes/TessellationSample.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh
+      Pro.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/02 - Multi-line TextMesh
+      Pro.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/03 - Line Justification.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/04 - Word Wrapping.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/05 - Style Tags.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/07 - Superscript & Subscript
+      Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/10 - Bullets & Numbered List
+      Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/11 - The Style Tag.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/12a - Text Interactions.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/13 - Soft Hyphenation.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/15 - Inline Graphics & Sprites.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/16 - Linked text overflow
+      mode example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking
+      & Layout.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/19 - Masking Texture & Soft
+      Mask.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/20 - Input Field with Scrollbar.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/22 - Basic Scripting Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/23 - Animating Vertex Attributes.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/25 - Sunny Days Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder
+      Example.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
+    _buildIndex: 0
+  platform: 1
+  StandaloneTarget: 5
+  RanInEditor: 1
+  ScenePathDisplayed: 0
+  InputVisualizer: 0
+  ShowPopUp: 1
+  BuildLocationPath: 
+  LatestDesktopVersion: 1.5.1.exe
+  ShowDesktopPopUpInEditor: 0
+  createXMLReport: 0
+  xMLFilePath: 
+  AltTesterPort: 13000
+  KeepAUTSymbolDefined: 1
